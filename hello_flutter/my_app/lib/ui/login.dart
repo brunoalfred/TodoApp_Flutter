@@ -9,6 +9,9 @@ class Login extends StatefulWidget {
 }
 
 class LoginState extends State<Login> {
+  final TextEditingController _userController = new TextEditingController();
+  // final TextEditingController _userController = new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -27,7 +30,37 @@ class LoginState extends State<Login> {
         alignment: Alignment.topCenter,
         child: new Column(
           children: <Widget>[
-            new Image.asset(name)
+            new Image.asset(
+              "assets/face.png",
+              width: 90.0,
+              height: 90.0,
+              color: Colors.greenAccent,
+            ),
+            new Container(
+              height: 180,
+              width: 400.0,
+              color: Colors.blueGrey,
+              child: new Column(
+                children: <Widget>[
+                  new TextField(
+                    controller: _userController,
+                    decoration: new InputDecoration(
+                      hintText: "Username",
+                      icon: new Icon(Icons.person_pin),
+                    ),
+                  ),
+                  new TextField(
+                    controller: _passController,
+                    decoration: new InputDecoration(
+                        hintText: "password",
+                        icon: new Icon(
+                          Icons.lock_open,
+                          color: Colors.blue,
+                        )),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
