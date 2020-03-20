@@ -45,12 +45,14 @@ class LoginState extends State<Login> {
                   new TextField(
                     controller: _userController,
                     decoration: new InputDecoration(
-                      hintText: "Username",
-                      icon: new Icon(
-                        Icons.person_pin,
-                        color: Colors.blue,
-                      ),
-                    ),
+                        hintText: "Username",
+                        icon: new Icon(
+                          Icons.person_pin,
+                          color: Colors.blue,
+                        ),
+                        hintStyle: TextStyle(
+                          color: Colors.green,
+                        )),
                   ),
                   new TextField(
                     controller: _passController,
@@ -59,6 +61,9 @@ class LoginState extends State<Login> {
                         icon: new Icon(
                           Icons.lock_open,
                           color: Colors.blue,
+                        ),
+                        hintStyle: TextStyle(
+                          color: Colors.green,
                         )),
                   ),
                 ],
