@@ -27,7 +27,7 @@ class Home extends StatelessWidget {
             print("you email is sent!");
           },
           icon: Icon(Icons.mail),
-          label: Text("mail me!"),
+          label: Text("mail ME!"),
           autofocus: true,
           color: Colors.cyan,
         ),
