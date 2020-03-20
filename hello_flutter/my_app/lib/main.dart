@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import './ui/home.dart';
+import './ui/login.dart';
 
 void main() => runApp(MaterialApp(
-      // title: Text("My First App"),
-      home: Home(),
+      home: Login(),
     ));
