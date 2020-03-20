@@ -51,7 +51,7 @@ class LoginState extends State<Login> {
                           color: Colors.blue,
                         ),
                         hintStyle: TextStyle(
-                          color: Colors.green,
+                          color: Colors.greenAccent,
                         )),
                   ),
                   new TextField(
@@ -63,7 +63,7 @@ class LoginState extends State<Login> {
                           color: Colors.blue,
                         ),
                         hintStyle: TextStyle(
-                          color: Colors.green,
+                          color: Colors.greenAccent,
                         )),
                   ),
                 ],
