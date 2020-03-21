@@ -36,7 +36,6 @@ class LoginState extends State<Login> {
               width: 90.0,
               height: 90.0,
               color: Colors.greenAccent,
-              
             ),
             new Container(
               height: 180,
@@ -68,6 +67,32 @@ class LoginState extends State<Login> {
                           color: Colors.greenAccent,
                         )),
                   ),
+                  new Row(
+                    children: <Widget>[
+                      new RaisedButton.icon(
+                        onPressed: () {
+                          print("Sent!");
+                        },
+                        color: Colors.lightBlue,
+                        icon: Icon(
+                          Icons.send,
+                          color: Colors.green,
+                        ),
+                        label: new Text("Send"),
+                      ),
+                      new RaisedButton.icon(
+                        onPressed: () {
+                          print('canceled');
+                        },
+                        color: Colors.lightBlue,
+                        icon: Icon(
+                          Icons.cancel,
+                          color: Colors.red,
+                        ),
+                        label: new Text("cancel"),
+                      )
+                    ],
+                  )
                 ],
               ),
             )
