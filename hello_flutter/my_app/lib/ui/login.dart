@@ -67,34 +67,51 @@ class LoginState extends State<Login> {
                           color: Colors.greenAccent,
                         )),
                   ),
+                  new Padding(padding: new EdgeInsets.all(10.5)),
                   new Row(
                     children: <Widget>[
-                      new RaisedButton.icon(
-                        onPressed: () {
-                          print("Sent!");
-                        },
-                        color: Colors.lightBlue,
-                        icon: Icon(
-                          Icons.send,
-                          color: Colors.green,
+                      new Container(
+                        margin: const EdgeInsets.only(left: 40.0),
+                        child: new RaisedButton.icon(
+                          onPressed: () => debugPrint("Sent!"),
+                          color: Colors.lightBlue,
+                          icon: Icon(
+                            Icons.send,
+                            color: Colors.green,
+                          ),
+                          label: new Text("Send"),
                         ),
-                        label: new Text("Send"),
                       ),
-                      new RaisedButton.icon(
-                        onPressed: () {
-                          print('canceled');
-                        },
-                        color: Colors.lightBlue,
-                        icon: Icon(
-                          Icons.cancel,
-                          color: Colors.red,
+                      new Container(
+                        margin: const EdgeInsets.only(left: 140.0),
+                        child: new RaisedButton.icon(
+                          onPressed: () => debugPrint('canceled'),
+                          color: Colors.lightBlue,
+                          icon: Icon(
+                            Icons.cancel,
+                            color: Colors.red,
+                          ),
+                          label: new Text("cancel"),
                         ),
-                        label: new Text("cancel"),
-                      )
+                      ),
                     ],
                   )
                 ],
               ),
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new Text(
+                  "Welcome, Bruno",
+                  style: TextStyle(
+                    color: Colors.greenAccent,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.normal,
+                  ),
+                ),
+              ],
             )
           ],
         ),
