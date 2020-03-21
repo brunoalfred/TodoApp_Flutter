@@ -24,9 +24,10 @@ class LoginState extends State<Login> {
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold)),
         centerTitle: true,
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.greenAccent,
       ),
       body: new Container(
+        color: Colors.orangeAccent,
         alignment: Alignment.topCenter,
         child: new Column(
           children: <Widget>[
@@ -35,11 +36,12 @@ class LoginState extends State<Login> {
               width: 90.0,
               height: 90.0,
               color: Colors.greenAccent,
+              
             ),
             new Container(
               height: 180,
-              width: 400.0,
-              color: Colors.blueGrey,
+              width: 500.0,
+              color: Colors.orangeAccent,
               child: new Column(
                 children: <Widget>[
                   new TextField(
